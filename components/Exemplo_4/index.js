@@ -10,6 +10,11 @@ export default function Exemplo_4(){
 
     const[txtTela, setTxtTela2] = useState ('');
 
+    function HandleExibeTexto (){
+        setTxtTela2(txt2);
+        setTxt2('');
+    }
+
     function atualizaTextoHandle (txt){
 
         setTxtDigitado(txt);
@@ -34,9 +39,13 @@ export default function Exemplo_4(){
             value={txt2}
             />
 
-            <Pressable style={styles.botao}>
+            <Pressable 
+            style= {({ pressed}) => pressed ? [styles.botao, styles.botaopress] : styles.botao}
+            onPress ={ () => HandleExibeTexto()}>
                 <Text style={styles.txtBotao}> Exibir Texto</Text>
             </Pressable>
+
+            
                 
             
         </View>

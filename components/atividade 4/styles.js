@@ -33,7 +33,7 @@ padding:5,
     },
     linha:{
 borderBottomWidth: 3,
-borderColor: '#b71c1c',
+//borderColor: '#b71c1c',
 marginVertical: 20,
 width: '100%'
     },
@@ -54,8 +54,11 @@ backgroundColor:'#fff',
     },
     txtBotaoPress:{
         color:'#b71c1c',
+    },
+    nome:{
+        color:'#b71c1c',
+        fontSize: 25,
     }
-   
 });
 
 export default styles;
