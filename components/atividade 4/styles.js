@@ -14,12 +14,21 @@ const styles = StyleSheet.create({
         margin:20,
         marginBottom: 40,
     },
+    texto1:{
+        fontSize:25,
+        marginVertical: 10,
+        paddin:5,
+        //width: '80%',
+        color:'#B71C1C',
+        marginRight: 450,
+    },
     texto:{
 fontSize:25,
 marginVertical: 10,
 paddin:5,
 //width: '80%',
 color:'#B71C1C',
+marginRight: 400,
 
     },
     input:{
