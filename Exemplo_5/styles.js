@@ -57,4 +57,6 @@ fontSize:16,
 fontWeight:'bold',
 color: '#C51162',
     },
-})
+});
+
+export default styles;
