@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
         padding: 8,
         width:'100%',
     borderRadius: 20,
-
     },
     titulo:{
 margin: 6,
@@ -42,8 +41,7 @@ color: '#C51162',
         justifyContent: 'center',
         borderRadius:10,
         marginTop: 20,
-        width: '100%',
-
+        width: 90,
     },
     buttonTouch:{
 backgroundColor: '#C51162',
@@ -58,10 +56,21 @@ fontSize:16,
 fontWeight:'bold',
 color: '#C51162',
     },
-    alinhabotao:{
+   
+    buttonzerar:{
+        backgroundColor: '#E91E63',
+        height: 60,
+        justifyContent: 'center',
+        borderRadius:10,
+        marginTop: 20,
+        //width: '100%',
+        
+    },
+    alinhaBotao:{
         justifyContent:'space-between',
         flexDirection: 'row'
     }
+    
 });
 
 export default styles;
