@@ -11,6 +11,7 @@ export default function Atividade5 () {
     const [n1, setN1] = useState (0);
     const [n2, setN2] = useState (0);
     const [total,setTotal] = useState ('');
+    const [sinal,setsinal] = useState ('');
     //const [zerar, setzerar] = useState (0)
 
     function soma () {
@@ -29,7 +30,22 @@ export default function Atividade5 () {
     function zerar () {
         setTotal ('');
     }
-    
+    function handleTexts() {
+        soma ();
+        setsinal ('+');
+    }
+    function handleTextm() {
+        sub ();
+        setsinal ('-');
+    }
+    function handleTextv() {
+        multi ();
+        setsinal ('*');
+    }
+    function handleTextd() {
+        div ();
+        setsinal ('/');
+    }
 
     return(
 
@@ -58,7 +74,7 @@ export default function Atividade5 () {
 
         />
 
-<Text style={styles.txtSaida}> + </Text>
+<Text style={styles.txtSaida}> {sinal} </Text>
 
 <Text style={styles.textLabel}>2° número</Text>
 
@@ -105,7 +121,7 @@ value={total ? parseFloat(total).toFixed(2) : ''}
 />
 <View style={styles.alinhaBotao}>
 <Pressable
-onPress={() => soma ()}
+onPress={handleTexts}
 style={
 ({pressed}) => pressed ?
 [styles.button, styles.buttonTouch]
@@ -120,7 +136,7 @@ styles.button
 </Pressable>
 
 <Pressable
-onPress={() => sub ()}
+onPress={handleTextm}
 style={
 ({pressed}) => pressed ?
 [styles.button, styles.buttonTouch]
@@ -134,7 +150,7 @@ styles.button
 </Pressable>
 
 <Pressable
-onPress={() => multi ()}
+onPress={handleTextv}
 style={
 ({pressed}) => pressed ?
 [styles.button, styles.buttonTouch]
@@ -147,7 +163,7 @@ styles.button
 </Pressable>
 
 <Pressable
-onPress={() => div ()}
+onPress={handleTextd}
 style={
 ({pressed}) => pressed ?
 [styles.button, styles.buttonTouch]
